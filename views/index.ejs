@@ -1,0 +1,39 @@
+<%- include ('../views/partials/header.ejs') %>
+<%- include ('../views/partials/homenavabar.ejs') %>
+<body>
+	<div class="container">
+		<hr>
+		<div class="jumbotron">
+			<h1 class="display-4">Bem vindo</h1>
+			<p class="lead">Bem vindo ao Blog Gui do Programador</p>
+			
+			
+			<p class="lead">
+			  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+			</p>
+		  </div>
+		<% articles.forEach(article => { %>
+
+			<div class="card">
+				<div class="card-header">
+						<h2><%= article.title %></h2>
+				</div>
+				<div class="card-body">
+				<a class="btn btn-success" href="/<%= article.slug %>">Ler artigo</a>
+				</div>
+				<br>
+			</div>
+
+
+		 <% }) %>
+
+			<div class="row">
+				<div class="col col-12">
+					<a style="float: right" href="/articles/page/2">Next</a>
+				</div>
+				<hr>
+		 </div>
+
+	</div>
+</body>
+<%- include ('../views/partials/footer.ejs') %>

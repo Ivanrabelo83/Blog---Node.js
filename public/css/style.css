@@ -1,0 +1,13 @@
+body {
+  background: rgb(207, 212, 216);
+}
+
+#formulario-pergunta {
+  margin-top: 5vh;
+}
+
+.container {
+  /* margin-top: 50px; */
+  width: 1200px;
+  height: 600px;
+}
